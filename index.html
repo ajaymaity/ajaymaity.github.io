@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-<body style="margin: 0px; overflow-x: hidden;">
+<body id="body" style="margin: 0px; overflow: hidden;">
 
 <script type="text/javascript">
 
     var url = window.location.href;
-    alert(url);
+    var val = url.split("?val=")[1];
+    
+    var iframe = "";
+    if (val == "course-v1:BerkeleyX+CS105x+1T2016") iframe = '<iframe src="Documents/BerkeleyX CS105x - Introduction to Apache Spark.JPG" style="width: 100%; height: 100vh;"></iframe>';
+
+    document.getElementById("body").innerHTML = iframe;
 
 </script>
-
-<!--<iframe src="Documents/Introduction to Big Data (September 2015 Version).pdf" style="width: 100vw; height: 100vh;"></iframe>-->
 
 </body>
 </html>
