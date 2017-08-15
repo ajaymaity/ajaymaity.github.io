@@ -8,7 +8,76 @@
     var val = url.split("?val=")[1];
     
     var iframe = "";
-    if (val == "course-v1:BerkeleyX+CS105x+1T2016") iframe = '<iframe src="Documents/BerkeleyX CS105x - Introduction to Apache Spark.JPG" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** Codecademy */
+    // Deploy a Website
+    if (val == "DeployAWebsite") iframe = '<iframe src="Documents/Codecademy/Deploy a Website.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    // HTML & CSS
+    else if (val == "HTML&CSS") iframe = '<iframe src="Documents/Codecademy/HTML & CSS.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    // Javascript
+    else if (val == "Javascript") iframe = '<iframe src="Documents/Codecademy/Javascript.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    // Learn AngularJS 1.X
+    else if (val == "LearnAngularJS1.X") iframe = '<iframe src="Documents/Codecademy/Learn AngularJS 1.X.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    
+    /** Coursera */
+    // UCSD - Introduction to Big Data (September 2015 Version)
+    else if (val == "7HBYC6WVC9TV") iframe = '<iframe src="Documents/Coursera/UCSD - Introduction to Big Data (September 2015 Version).pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** edX */
+    // BerkeleyX CS105x - Introduction to Apache Spark
+    else if (val == "course-v1:BerkeleyX+CS105x+1T2016") iframe = '<iframe src="Documents/edX/BerkeleyX CS105x - Introduction to Apache Spark.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    // Microsoft - DAT203.1x - Data Science Essentials
+    else if (val == "381670159274409e85e6b9ea9df4595c") iframe = '<iframe src="Documents/edX/Microsoft - DAT203.1x - Data Science Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // Microsoft - DAT203.2x - Principles of Machine Learning
+    else if (val == "aef20dd933604f8088c3752364f09b15") iframe = '<iframe src="Documents/edX/Microsoft - DAT203.2x - Principles of Machine Learning.pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** IBM */
+    // IBM Bluemix Essentials
+    else if (val == "IBMBluemixEssentials") iframe = '<iframe src="Documents/IBM/IBM Bluemix Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // IBM Certified Application Developer - Cloud Platform v1
+    else if (val == "4275e252-ca81-47f5-93cb-fc2756522beb") iframe = '<iframe src="Documents/IBM/IBM Certified Application Developer - Cloud Platform v1.pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** Lynda */
+    // iOS 9 App Development with Swift 2 Essential Training
+    else if (val == "A1EDD3986F044E2AA2A0742AD3C88248") iframe = '<iframe src="Documents/Lynda/iOS 9 App Development with Swift 2 Essential Training.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // Swift 2.0 Essential Training
+    else if (val == "2F03AB5F070F40BC8546D7DCB3FAC06D") iframe = '<iframe src="Documents/Lynda/Swift 2.0 Essential Training.pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** MapR */
+    // DA 410 - Apache Drill Essentials
+    else if (val == "9ceonhd63i7o") iframe = '<iframe src="Documents/MapR/DA 410 - Apache Drill Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DA 415 - Apache Drill Architecture
+    else if (val == "5kf8jf7ekgnf") iframe = '<iframe src="Documents/MapR/DA 415 - Apache Drill Architecture.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DA 440 - Apache Hive Essentials
+    else if (val == "68kztq2h5h8d") iframe = '<iframe src="Documents/MapR/DA 440 - Apache Hive Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DA 450 - Apache Pig Essentials
+    else if (val == "qpzjqnbyzjx6") iframe = '<iframe src="Documents/MapR/DA 450 - Apache Pig Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DEV 301 - Developing Hadoop Applications
+    else if (val == "5596fbcmwfis") iframe = '<iframe src="Documents/MapR/DEV 301 - Developing Hadoop Applications.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DEV 320 - Apache HBase Data Model and Architecture
+    else if (val == "vhmrp7nroabz") iframe = '<iframe src="Documents/MapR/DEV 320 - Apache HBase Data Model and Architecture.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DEV 325 - Apache HBase Schema Design
+    else if (val == "n7zgcz4kqbqc") iframe = '<iframe src="Documents/MapR/DEV 325 - Apache HBase Schema Design.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DEV 330 - Developing Apache HBase Applications - Basics
+    else if (val == "45fa8zjzehqk") iframe = '<iframe src="Documents/MapR/DEV 330 - Developing Apache HBase Applications - Basics.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DEV 335 - Developing Apache HBase Applications - Advanced
+    else if (val == "6k4crjihxbs3") iframe = '<iframe src="Documents/MapR/DEV 335 - Developing Apache HBase Applications - Advanced.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // DEV 360 - Apache Spark Essentials
+    else if (val == "75b8bnrm2qcp") iframe = '<iframe src="Documents/MapR/DEV 360 - Apache Spark Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    // HDE 100 - Apache Hadoop Esssentials
+    else if (val == "dzbvnb73tfve") iframe = '<iframe src="Documents/MapR/HDE 100 - Apache Hadoop Esssentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** Skillsoft */
+    // Introduction to HTML5
+    else if (val == "IntroductionToHTML5") iframe = '<iframe src="Documents/Skillsoft/Introduction to HTML5.pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** TCS */
+    // iRise - E0 - Assessment
+    else if (val == "iRise-E0-Assessment") iframe = '<iframe src="Documents/TCS/iRise - E0 - Assessment.pdf" style="width: 100%; height: 100vh;"></iframe>';
+
+    /** Udemy */
+    // Sameer Mathur - Data Science and Analytics using R Programming
+    else if (val == "UC-8BAN22YS") iframe = '<iframe src="Documents/Udemy/Sameer Mathur - Data Science and Analytics using R Programming.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     document.getElementById("body").innerHTML = iframe;
 
