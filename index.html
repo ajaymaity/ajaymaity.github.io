@@ -7,79 +7,109 @@
     var url = window.location.href;
     var val = url.split("?")[1];
     
-    var iframe = "";
+    var html = "";
 
     /** Codecademy */
     // Deploy a Website
-    if (val == "11") iframe = '<iframe src="Documents/Codecademy/Deploy a Website.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    if (val == "11") html = '<iframe src="Documents/Codecademy/Deploy a Website.JPG" style="width: 100%; height: 100vh;"></iframe>';
     // HTML & CSS
-    else if (val == "12") iframe = '<iframe src="Documents/Codecademy/HTML & CSS.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "12") html = '<iframe src="Documents/Codecademy/HTML & CSS.JPG" style="width: 100%; height: 100vh;"></iframe>';
     // Javascript
-    else if (val == "13") iframe = '<iframe src="Documents/Codecademy/Javascript.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "13") html = '<iframe src="Documents/Codecademy/Javascript.JPG" style="width: 100%; height: 100vh;"></iframe>';
     // Learn AngularJS 1.X
-    else if (val == "14") iframe = '<iframe src="Documents/Codecademy/Learn AngularJS 1.X.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "14") html = '<iframe src="Documents/Codecademy/Learn AngularJS 1.X.JPG" style="width: 100%; height: 100vh;"></iframe>';
     
     /** Coursera */
     // UCSD - Introduction to Big Data (September 2015 Version)
-    else if (val == "21") iframe = '<iframe src="Documents/Coursera/UCSD - Introduction to Big Data (September 2015 Version).pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "21") html = '<iframe src="Documents/Coursera/UCSD - Introduction to Big Data (September 2015 Version).pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** edX */
     // BerkeleyX CS105x - Introduction to Apache Spark
-    else if (val == "31") iframe = '<iframe src="Documents/edX/BerkeleyX CS105x - Introduction to Apache Spark.JPG" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "31") html = '<iframe src="Documents/edX/BerkeleyX CS105x - Introduction to Apache Spark.JPG" style="width: 100%; height: 100vh;"></iframe>';
     // Microsoft - DAT203.1x - Data Science Essentials
-    else if (val == "32") iframe = '<iframe src="Documents/edX/Microsoft - DAT203.1x - Data Science Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "32") html = '<iframe src="Documents/edX/Microsoft - DAT203.1x - Data Science Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // Microsoft - DAT203.2x - Principles of Machine Learning
-    else if (val == "33") iframe = '<iframe src="Documents/edX/Microsoft - DAT203.2x - Principles of Machine Learning.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "33") html = '<iframe src="Documents/edX/Microsoft - DAT203.2x - Principles of Machine Learning.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** IBM */
     // IBM Bluemix Essentials
-    else if (val == "41") iframe = '<iframe src="Documents/IBM/IBM Bluemix Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "41") html = '<iframe src="Documents/IBM/IBM Bluemix Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // IBM Certified Application Developer - Cloud Platform v1
-    else if (val == "42") iframe = '<iframe src="Documents/IBM/IBM Certified Application Developer - Cloud Platform v1.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "42") html = '<iframe src="Documents/IBM/IBM Certified Application Developer - Cloud Platform v1.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** Lynda */
     // iOS 9 App Development with Swift 2 Essential Training
-    else if (val == "51") iframe = '<iframe src="Documents/Lynda/iOS 9 App Development with Swift 2 Essential Training.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "51") html = '<iframe src="Documents/Lynda/iOS 9 App Development with Swift 2 Essential Training.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // Swift 2.0 Essential Training
-    else if (val == "52") iframe = '<iframe src="Documents/Lynda/Swift 2.0 Essential Training.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "52") html = '<iframe src="Documents/Lynda/Swift 2.0 Essential Training.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** MapR */
     // DA 410 - Apache Drill Essentials
-    else if (val == "61") iframe = '<iframe src="Documents/MapR/DA 410 - Apache Drill Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "61") html = '<iframe src="Documents/MapR/DA 410 - Apache Drill Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DA 415 - Apache Drill Architecture
-    else if (val == "62") iframe = '<iframe src="Documents/MapR/DA 415 - Apache Drill Architecture.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "62") html = '<iframe src="Documents/MapR/DA 415 - Apache Drill Architecture.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DA 440 - Apache Hive Essentials
-    else if (val == "63") iframe = '<iframe src="Documents/MapR/DA 440 - Apache Hive Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "63") html = '<iframe src="Documents/MapR/DA 440 - Apache Hive Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DA 450 - Apache Pig Essentials
-    else if (val == "64") iframe = '<iframe src="Documents/MapR/DA 450 - Apache Pig Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "64") html = '<iframe src="Documents/MapR/DA 450 - Apache Pig Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DEV 301 - Developing Hadoop Applications
-    else if (val == "65") iframe = '<iframe src="Documents/MapR/DEV 301 - Developing Hadoop Applications.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "65") html = '<iframe src="Documents/MapR/DEV 301 - Developing Hadoop Applications.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DEV 320 - Apache HBase Data Model and Architecture
-    else if (val == "66") iframe = '<iframe src="Documents/MapR/DEV 320 - Apache HBase Data Model and Architecture.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "66") html = '<iframe src="Documents/MapR/DEV 320 - Apache HBase Data Model and Architecture.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DEV 325 - Apache HBase Schema Design
-    else if (val == "67") iframe = '<iframe src="Documents/MapR/DEV 325 - Apache HBase Schema Design.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "67") html = '<iframe src="Documents/MapR/DEV 325 - Apache HBase Schema Design.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DEV 330 - Developing Apache HBase Applications - Basics
-    else if (val == "68") iframe = '<iframe src="Documents/MapR/DEV 330 - Developing Apache HBase Applications - Basics.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "68") html = '<iframe src="Documents/MapR/DEV 330 - Developing Apache HBase Applications - Basics.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DEV 335 - Developing Apache HBase Applications - Advanced
-    else if (val == "69") iframe = '<iframe src="Documents/MapR/DEV 335 - Developing Apache HBase Applications - Advanced.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "69") html = '<iframe src="Documents/MapR/DEV 335 - Developing Apache HBase Applications - Advanced.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // DEV 360 - Apache Spark Essentials
-    else if (val == "610") iframe = '<iframe src="Documents/MapR/DEV 360 - Apache Spark Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "610") html = '<iframe src="Documents/MapR/DEV 360 - Apache Spark Essentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
     // HDE 100 - Apache Hadoop Esssentials
-    else if (val == "611") iframe = '<iframe src="Documents/MapR/HDE 100 - Apache Hadoop Esssentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "611") html = '<iframe src="Documents/MapR/HDE 100 - Apache Hadoop Esssentials.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** Skillsoft */
     // Introduction to HTML5
-    else if (val == "71") iframe = '<iframe src="Documents/Skillsoft/Introduction to HTML5.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "71") html = '<iframe src="Documents/Skillsoft/Introduction to HTML5.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** TCS */
     // iRise - E0 - Assessment
-    else if (val == "81") iframe = '<iframe src="Documents/TCS/iRise - E0 - Assessment.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "81") html = '<iframe src="Documents/TCS/iRise - E0 - Assessment.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
     /** Udemy */
     // Sameer Mathur - Data Science and Analytics using R Programming
-    else if (val == "91") iframe = '<iframe src="Documents/Udemy/Sameer Mathur - Data Science and Analytics using R Programming.pdf" style="width: 100%; height: 100vh;"></iframe>';
+    else if (val == "91") html = '<iframe src="Documents/Udemy/Sameer Mathur - Data Science and Analytics using R Programming.pdf" style="width: 100%; height: 100vh;"></iframe>';
 
-    document.getElementById("body").innerHTML = iframe;
+    else if (val == "msc-thesis-results") {
+        html = `<style type="text/css">
+	table.tableizer-table {
+		font-size: 12px;
+		border: 1px solid #CCC; 
+		font-family: Arial, Helvetica, sans-serif;
+	} 
+	.tableizer-table td {
+		padding: 4px;
+		margin: 3px;
+		border: 1px solid #CCC;
+	}
+	.tableizer-table th {
+		background-color: #104E8B; 
+		color: #FFF;
+		font-weight: bold;
+	}
+</style>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>SOM Rows</th><th>Text->Text</th><th>Text->Image</th></tr></thead><tbody>
+ <tr><td>3</td><td>0.35</td><td>0.18</td></tr>
+ <tr><td>4</td><td>0.6</td><td>0.65</td></tr>
+ <tr><td>5</td><td>0.6</td><td>0.63</td></tr>
+ <tr><td>6</td><td>0.6</td><td>0.63</td></tr>
+ <tr><td>7</td><td>0.6</td><td>0.55</td></tr>
+ <tr><td>8</td><td>0.22</td><td>0.45</td></tr>
+ <tr><td>9</td><td>0.17</td><td>0.33</td></tr>
+</tbody></table>`;
+    }
+
+    document.getElementById("body").innerHTML = html;
 
 </script>
 
